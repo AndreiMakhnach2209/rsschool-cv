@@ -1,6 +1,7 @@
 
 # **Andrei Makhnach**
 ****
+![foto](foto.png)
 
 ## Contacts:
 ****
