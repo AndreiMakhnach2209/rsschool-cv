@@ -2,7 +2,7 @@
 # **Andrei Makhnach**
 ****
 
-![foto](foto.png)
+![foto](./images/foto.png)
 
 ## Contacts:
 ****
