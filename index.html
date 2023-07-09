@@ -1,16 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-     <head>
-        <title>Page Title</title>
-    </head>
-     <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#about-me" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#proect" class="nav-link">My proect</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-container">
+            <section class="section" id="profile">
+                <h1 class="section-title">Makhnach Andrei</h1>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="section-list">
+                    <li class="list-item">
+                        tel::<a href="tel:+375298515240" class="section-link">+375 29 851-52-40</a>                        
+                    </li>
+                    <li class="list-item">
+                        Email:<a href="mailto:ahdpyxa88@mail.com" class="section-link">ahdpyxa88@mail.com</a>
+                    </li>
+                    <li class="list-item">
+                        Discord<a href="https://discordapp.com/users/1120793615925510146/" class="section-link">Andrei (@AndreiMakhnach2209)</a>
+                    </li>                    
+                </ul>
+            </section>
+            <section class="section" id="about-me">
+                <h2 class="section-title">About me</h2>
+                <p class="paragraph">
+                    I work as a service engineer. I strive to learn something new. RS School courses are suitable for this. Now my goal is to gain knowledge in the field of frontend development.
+                </p>
+                <p class="paragraph">
+                    My strengths are diligence, learning ability, discipline, striving for self-development.
+                </p>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="section-list">
+                    <li class="list-item">Autodesk Autocad</li>
+                    <li class="list-item">Autodesk Fusion 360</li>
+                    <li class="list-item">While studying at the university, I studied Pascal</li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Codewars test</h2>
+                <p class="paragraph">Pascal</p>
+                <pre>
+                    <code class="code">
+unit BugFixMultiply;
+interface
+  function Multiply(const A: Integer; const B: Integer): Integer;
+implementation
+  function Multiply(const A: Integer; const B: Integer): Integer;
+  begin
+    Result := A + B;
+  end;
+end.
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-<ul>
-    <li>list 1</li>
-    <li>list 2</li>
-</ul>
+unit BugFixMultiplyTests;
+interface
+  uses
+    TestFramework,
+    BugFixMultiply;
+  type TMultiplyTests = class(TTestCase)
+    published
+    procedure Examples;
+end;
+  procedure RegisterTests;
+  implementation
+    procedure RegisterTests;
+    begin
+      TestFramework.RegisterTest(TMultiplyTests.Suite);
+    end;
+    procedure TMultiplyTests.Examples;
+    begin
+      CheckEquals(2, Multiply(1, 1));
+      CheckEquals(3, Multiply(2, 1));
+      CheckEquals(4, Multiply(2, 2));
+      CheckEquals(8, Multiply(3, 5)); 
+    end;
+end.
+                    </code>
+                </pre>
+            </section>
+            <section class="section" id="proect">
+                <h2 class="section-title">My first project</h2>
+                <a href="https://andreimakhnach2209.github.io/rsschool-cv/cv" class="section-link">CV</a>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+                <p class="paragraph">Belarusian National Technical University</p>
+                <p class="paragraph">Mechanical engineer, specialty "Auto service"</p>
+            </section>
+            <section class="section" id="languages">
+                <h2 class="section-title">Languages</h2>
+                <ul class="section-list">
+                    <li class="list-item">Belarusian - native</li>
+                    <li class="list-item">Russian - native</li>
+                    <li class="list-item">English - beginner</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
 
+        </div>
+
+    </footer>
 </body>
 </html>
